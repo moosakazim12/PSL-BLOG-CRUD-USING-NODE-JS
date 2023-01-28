@@ -6,7 +6,7 @@ const methodOverride = require("method-override");
 const app = express();
 
 const uri =
-  "mongodb+srv://moosakazim:moosakazim123@cluster0.iuluo.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
+  "your mongo db url";
 
 mongoose.connect(uri, {
   useNewUrlParser: true,
