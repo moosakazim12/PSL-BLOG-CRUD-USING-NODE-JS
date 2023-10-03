@@ -3,11 +3,11 @@ const mongoose = require("mongoose");
 const Article = require("./models/article");
 const articleRouter = require("./routes/articles");
 const methodOverride = require("method-override");
+require("dotenv").config();
+
 const app = express();
 
-const uri =
-  "your mongo db url";
-
+const uri = process.env.MONGODB_URI;
 mongoose.connect(uri, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
